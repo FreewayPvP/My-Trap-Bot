@@ -61,4 +61,4 @@ client.registry
     .registerDefaultCommands({ help: false, ping: true })
     .registerCommandsIn(path.join(__dirname, 'commands'))
 
-client.login('NTQ5NjMxOTE1ODcxODMwMDQ3.D3T3sw.5-RAMZ1Kimv9L160B-V3b3rxrT4');
+client.login('process.env.BOT_TOKEN');
