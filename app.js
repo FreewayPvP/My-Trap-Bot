@@ -22,18 +22,6 @@ music(client, {
   loopmsg: '[Trap] LOOOP has been turned **{toggle}**!'
 });
 
-function GameStatus() {
-      let status = [
-        `over ${client.users.size} Users!`,
-        `over Trap's & Femboy's`,
-        `over you ;)`
-      ]; 
-      let rstatus = Math.floor(Math.random() * status.length);
-      client.user.setActivity(rstatus, {
-          "type": "WATCHING"
-      });
-    }; setInterval(GameStatus, 15000)
-
 client.on("ready", () => {
   console.log(chalk.blue.bgRed.bold(`Bot has started, with ${client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString()} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`));
     client.user.setStatus('online');
