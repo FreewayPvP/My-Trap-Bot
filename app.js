@@ -2,6 +2,7 @@
 const { Discord, Client, MessageAttachment } = require('discord.js');
 const Commando = require('discord.js-commando');
 const chalk = require('chalk');
+const token = process.env.token;
 
 const client = new Commando.Client({
     commandPrefix: '=',
@@ -61,4 +62,4 @@ client.registry
     .registerDefaultCommands({ help: false, ping: true })
     .registerCommandsIn(path.join(__dirname, 'commands'))
 
-client.login('process.env.token');
+client.login(token);
