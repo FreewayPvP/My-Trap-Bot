@@ -24,11 +24,11 @@ music(client, {
 function GameStatus() {
       let status = [
         `over ${client.users.size} Users!`,
-		`over Trap's & Femboy's`,
-		`over you ;)`
-      ];
+        `over Trap's & Femboy's`,
+        `over you ;)`
+      ]; 
       let rstatus = Math.floor(Math.random() * status.length);
-      client.user.setActivity(status[rstatus], {
+      client.user.setActivity(rstatus, {
           "type": "WATCHING"
       });
     }; setInterval(GameStatus, 15000)
