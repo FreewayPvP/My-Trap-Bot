@@ -16,7 +16,7 @@ class EmbedCommand extends commando.Command {
 
 async run(message, args) {
     message.delete('10000')
-    message.member.addRole('560151982891991051').then(console.log).catch(console.error);
+    message.member.addRole('560149960784609302').then(console.log).catch(console.error);
     message.author.sendMessage({embed: {
         color: 3447003,
         description: `${message.author.username}(${message.author.id}) has now Recieved the 「NSFW PASS」`}}).then(message.delete('60000'));
