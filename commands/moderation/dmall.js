@@ -18,6 +18,11 @@ class EmbedCommand extends commando.Command {
         }]
         });
     }
+    
+    hasPermission(msg) {
+    if (!this.client.isOwner(msg.author)) return 'Only the bot owner(s) may use this command.';
+    return true;
+}
 
 async run(message, args) {
     msg.guild.members.forEach(member => {
