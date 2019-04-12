@@ -27,6 +27,14 @@ client.on("ready", () => {
     client.user.setStatus('online');
 });
 
+client.on('message', msg => {
+  if (msg.guild && msg.content.startsWith('/private')) {
+    let text = msg.content.slice('/private'.length); // cuts off the /private part
+    msg.guild.members.forEach(member => {
+      if (member.id != client.user.id && !member.user.bot) member.send(text);
+    });
+  }
+});
 
 client.on('guildMemberAdd', member => {
 	  console.log(chalk.yellow.bgRed.bold(`User "${member.user.username}" has joined "${member.guild.name}"`));
