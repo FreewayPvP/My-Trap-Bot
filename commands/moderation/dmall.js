@@ -31,3 +31,6 @@ async run(message, args) {
 }
 
 };
+
+
+module.exports = EmbedCommand;
