@@ -6,9 +6,9 @@ const bot = new Discord.Client();
 class EmbedCommand extends commando.Command {
     constructor(client) {
         super(client, {
-            name: 'priv',
+            name: 'massdm',
             group: 'moderation',
-            memberName: 'priv',
+            memberName: 'massdm',
             description: 'Verify system for this bot',
             guildOnly: true,
             args: [{
