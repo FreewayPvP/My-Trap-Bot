@@ -10,14 +10,12 @@ class EmbedCommand extends commando.Command {
             group: 'moderation',
             memberName: 'priv',
             description: 'Verify system for this bot',
-            guildOnly: true
-            args: [
-        {
+            guildOnly: true,
+            args: [{
             key: 'text',
             prompt: 'What do you want to Mass DM People?',
             type: 'string'
-        }
-    ]
+        }]
         });
     }
 
