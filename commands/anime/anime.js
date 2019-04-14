@@ -1,4 +1,4 @@
-const { Command } = require('././commando');
+﻿const { Command } = require('../commando');
 const Discord = require('discord.js');
 var aq = require('animequote');
 const Kitsu = require('kitsu.js');
