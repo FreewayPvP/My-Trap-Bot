@@ -4,6 +4,8 @@ var aq = require('animequote');
 const Kitsu = require('kitsu.js');
 const kitsu = new Kitsu();
 const commando = require('discord.js-commando');
+const embed = new Discord.RichEmbed()
+const bot = new Discord.Client();
 
 
 class EmbedCommand extends commando.Command {
