@@ -50,7 +50,8 @@ client.registry
     ['help', 'Help Page'],
     ['nsfw', 'NSFW Commands'],
     ['pages', 'All Pages'],
-    ['moderation', 'Mod Commands']
+    ['moderation', 'Mod Commands'],
+    ['anime', 'Anime Commands owo']
   ])
 
     .registerDefaultGroups()
