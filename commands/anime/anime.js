@@ -3,6 +3,7 @@ const Discord = require('discord.js');
 var aq = require('animequote');
 const Kitsu = require('kitsu.js');
 const kitsu = new Kitsu();
+const commando = require('discord.js-commando');
 
 
 class EmbedCommand extends commando.Command {
