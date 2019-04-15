@@ -5,7 +5,7 @@ const Kitsu = require('kitsu.js');
 const kitsu = new Kitsu();
 
 
-module.exports = class AnimeCommand extends Command {
+class EmbedCommand extends commando.Command {
     constructor(client) {
         super(client, {
             name: 'anime',
@@ -67,3 +67,6 @@ module.exports = class AnimeCommand extends Command {
         }
     }
 }
+
+
+module.exports = EmbedCommand;
