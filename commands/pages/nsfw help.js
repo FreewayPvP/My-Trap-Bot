@@ -18,7 +18,7 @@ async run(message, args) {
   message.channel.send({embed: {
       color: 3447003,
       title: "TrapHouse | NSFW Help Page",
-      description: "y>NekoLewd\ny>NekoLewdGif\n\ny>Feet\ny>FeetGif\n\ny>Pussy\ny>Cum\ny>CumGif\ny>Boobs\ny>SmallBoobs\ny>SoloGif\ny>Anal\ny>Femdom\n\ny>FoxGirl\ny>Yuri\ny>Trap\ny>Futanari\ny>Blowjob\ny>Spank\n\ny>Hentai\ny>HentaiGif",
+      description: "=NekoLewd\n=NekoLewdGif\n\n=Feet\n=FeetGif\n\n=Pussy\n=Cum\n=CumGif\n=Boobs\n=SoloGif\n=Anal\n=Femdom\n\n=FoxGirl\n=Yuri\n=Trap\n=Futanari\n=Blowjob\n=Spank\n\n=Hentai\n=HentaiGif",
       footer: {
         text: "© TrapHouse Staff"
       }
