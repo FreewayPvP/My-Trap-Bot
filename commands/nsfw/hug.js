@@ -21,7 +21,7 @@ module.exports = class HugCommand extends Command {
         });
     }
 
-    run(message) {
+    async run(message, args, client) {
         var recipient = message.content.split(/\s+/g).slice(1).join(" ");
         var hug = hugP[Math.round(Math.random() * (hugP.length - 1))]
 
